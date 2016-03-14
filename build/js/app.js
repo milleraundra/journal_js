@@ -9,7 +9,7 @@ exports.JournalEntry.prototype.wordCount = function() {
   var string = this.body;
   var string_array = string.split(" ");
   return string_array.length;
-}
+};
 
 },{}],2:[function(require,module,exports){
 var JournalEntry = require('./../js/journal.js').JournalEntry;

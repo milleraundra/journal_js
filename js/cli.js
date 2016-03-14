@@ -3,8 +3,8 @@ var prompt = require('prompt');
 prompt.start();
 
 prompt.get(['title', 'date', 'body'], function(err, entry) {
-  var entry = new JournalEntry(entry.title, entry.date, entry.body);
-  var result = entry.wordCount();
+  var journal = new JournalEntry(entry.title, entry.date, entry.body);
+  var result = journal.wordCount();
   console.log(entry);
   console.log(result);
 });
